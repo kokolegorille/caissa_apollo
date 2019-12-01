@@ -1,0 +1,46 @@
+/*
+ * Board
+ * WARNING: STYLE HAS CHANGED FOR CG7.6!
+ * UNWRAP .merida and blue class!!!
+ */
+
+ .cg-wrap {
+  background-image: url("/images/board/brown.svg");
+}
+
+.cg-wrap cg-piece.pawn.white {
+  background-image: url("/images/pieces/merida/wP.svg");
+}
+.cg-wrap cg-piece.bishop.white {
+  background-image: url("/images/pieces/merida/wB.svg");
+}
+.cg-wrap cg-piece.knight.white {
+  background-image: url("/images/pieces/merida/wN.svg");
+}
+.cg-wrap cg-piece.rook.white {
+  background-image: url("/images/pieces/merida/wR.svg");
+}
+.cg-wrap cg-piece.queen.white {
+  background-image: url("/images/pieces/merida/wQ.svg");
+}
+.cg-wrap cg-piece.king.white {
+  background-image: url("/images/pieces/merida/wK.svg");
+}
+.cg-wrap cg-piece.pawn.black {
+  background-image: url("/images/pieces/merida/bP.svg");
+}
+.cg-wrap cg-piece.bishop.black {
+  background-image: url("/images/pieces/merida/bB.svg");
+}
+.cg-wrap cg-piece.knight.black {
+  background-image: url("/images/pieces/merida/bN.svg");
+}
+.cg-wrap cg-piece.rook.black {
+  background-image: url("/images/pieces/merida/bR.svg");
+}
+.cg-wrap cg-piece.queen.black {
+  background-image: url("/images/pieces/merida/bQ.svg");
+}
+.cg-wrap cg-piece.king.black {
+  background-image: url("/images/pieces/merida/bK.svg");
+}
