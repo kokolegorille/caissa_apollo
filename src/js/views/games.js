@@ -3,6 +3,7 @@ import { navigate } from "hookrouter";
 import { useQuery } from "@apollo/react-hooks";
 
 import { GAMES } from "../queries";
+import Filter from "./filter";
 
 const LIMIT = 25;
 
@@ -50,8 +51,15 @@ const Games = () => {
 
   const {games} = data;
 
-  if (games.length < LIMIT && hasMore) {
-    setHasMore(false);
+  if (games.length < LIMIT && hasMore) { setHasMore(false) }
+
+  // Remove empty keys
+  const sanitizeFilter = filter => {
+    let copy = {};
+    Object.keys(filter).forEach(key => {
+      if (filter[key]) { copy[key] = filter[key] }
+    });
+    return copy;
   }
 
   const renderGames = () => {
@@ -109,67 +117,13 @@ const Games = () => {
   return (
     <>
     <h1>Games</h1>
+    <Filter 
+      submit={data => setFilter(sanitizeFilter(data))} 
+      cancel={() => setFilter({})} 
+      />
     {renderGames()}
     </>
   );
 };
 
 export default Games;
-
-// import React from "react";
-// import {graphql, QueryRenderer} from "react-relay";
-
-// import environment from "../environment";
-
-// const renderQuery = ({error, props}) => {
-//   if (error) {
-//     return <div>{error.message}</div>;
-//   } else if (props) {
-//     console.log("PROPS: ", props);
-//     return (
-//       <div className="row">
-//         Games
-//       </div>
-//     );
-//   } 
-//   return <div>Loading...</div>;
-// }
-
-// const Games = () => {
-//   const offset = 0;
-//   const limit = 10;
-//   const filter = {};
-//   const order = "DESC";
-
-//   return (
-//     <QueryRenderer
-//       environment={environment}
-//       query={graphql`
-//         query games_Query(
-//           $offset: Int!
-//           $limit: Int!
-//           $filter: GameFilter!
-//           $order: SortOrder!
-//         ) {
-//           games(
-//             offset: $offset 
-//             limit: $limit 
-//             filter: $filter 
-//             order: $order
-//           ) {
-//             year
-//           }
-//         }
-//       `}
-//       variables={{
-//         offset: offset,
-//         limit: limit,
-//         filter: filter,
-//         order: order,
-//       }}
-//       render={renderQuery} 
-//     />
-//   );
-// };
-
-// export default Games;
