@@ -1,0 +1,106 @@
+/* FONTS */
+@font-face {
+  font-family: roboto;
+  src: url("../fonts/roboto.ttf") format("truetype"); /* For IE */
+  src: local("roboto"), url("../fonts/roboto.ttf") format("truetype"); /* For non-IE */
+}
+
+@font-face {
+  font-family: raleway;
+  src: url("../fonts/raleway.ttf") format("truetype"); /* For IE */
+  src: local("raleway"), url("../fonts/raleway.ttf") format("truetype"); /* For non-IE */
+}
+
+// @font-face {
+//   font-family: openSans;
+//   src: url("../fonts/open_sans.ttf") format("truetype"); /* For IE */
+//   src: local("open_sans"), url("../fonts/open_sans.ttf") format("truetype"); /* For non-IE */
+// }
+
+// @font-face {
+//   font-family: droidSans;
+//   src: url("../fonts/droid_sans.ttf") format("truetype"); /* For IE */
+//   src: local("droid_sans"), url("../fonts/droid_sans.ttf") format("truetype"); /* For non-IE */
+// }
+
+// @font-face {
+//   font-family: droidSerif;
+//   src: url("../fonts/droid_serif.ttf") format("truetype"); /* For IE */
+//   src: local("droid_serif"), url("../fonts/droid_serif.ttf") format("truetype"); /* For non-IE */
+// }
+
+// @font-face {
+//   font-family: cherrySwash;
+//   src: url("../fonts/cherry_swash.ttf") format("truetype"); /* For IE */
+//   src: local("cherry_swash"), url("../fonts/cherry_swash.ttf") format("truetype"); /* For non-IE */
+// }
+
+// @font-face {
+//   font-family: flamenco;
+//   src: url("../fonts/flamenco.ttf") format("truetype"); /* For IE */
+//   src: local("flamenco"), url("../fonts/flamenco.ttf") format("truetype"); /* For non-IE */
+// }
+
+// @font-face {
+//   font-family: inconsolata;
+//   src: url("../fonts/flamenco.ttf") format("truetype"); /* For IE */
+//   src: local("inconsolata"), url("../fonts/inconsolata.ttf") format("truetype"); /* For non-IE */
+// }
+
+// @font-face {
+//   font-family: anuratiregular;
+//   src: url("../fonts/anurati-regular-webfont.ttf") format("truetype"); /* For IE */
+//   src: local("anurati"), url("../fonts/anurati-regular-webfont.ttf") format("truetype"); /* For non-IE */
+// }
+
+// @font-face {
+//   font-family: dosis;
+//   src: url("../fonts/dosis.ttf") format("truetype"); /* For IE */
+//   src: local("dosis"), url("../fonts/dosis.ttf") format("truetype"); /* For non-IE */
+// }
+
+// @font-face {
+//   font-family: montserrat;
+//   src: url("../fonts/montserrat.ttf") format("truetype"); /* For IE */
+//   src: local("montserrat"), url("../fonts/montserrat.ttf") format("truetype"); /* For non-IE */
+// }
+
+// @font-face {
+//   font-family: italiana;
+//   src: url("../fonts/italiana.ttf") format("truetype"); /* For IE */
+//   src: local("italiana"), url("../fonts/italiana.ttf") format("truetype"); /* For non-IE */
+// }
+
+// @font-face {
+//   font-family: typewriter;
+//   src: url("../fonts/veteran_typewriter.ttf") format("truetype"); /* For IE */
+//   src: local("typewriter"), url("../fonts/veteran_typewriter.ttf") format("truetype"); /* For non-IE */
+// }
+
+// @font-face {
+//   font-family: journal;
+//   src: url("../fonts/journal.ttf") format("truetype"); /* For IE */
+//   src: local("italiana"), url("../fonts/journal.ttf") format("truetype"); /* For non-IE */
+// }
+
+$font_family_sans_serif: "raleway", "roboto", "droidSans", "openSans", "flamenco", Verdana, Arial, sans-serif;
+$font_family_serif: "droidSerif", "cherrySwash", Georgia, "Times New Roman", Times, serif;
+$font_family_monospace: "inconsolata", "Courier New", Courier, monospace;
+
+html {
+  font-family: $font_family_sans_serif;
+  // h1, h2, h3, h4, h5, h6 { font-family: $font_family_serif; }
+}
+
+// .anurati { font-family: "anuratiregular"; }
+// .cherrySwash { font-family: "cherrySwash"; }
+// .dosis { font-family: "dosis"; }
+// .flamenco { font-family: "flamenco"; }
+// .inconsolata { font-family: "inconsolata"; }
+// .italiana { font-family: "italiana"; }
+// .monospace { font-family: $font_family_monospace; }
+// .montserrat { font-family: "montserrat"; }
+.roboto { font-family: "roboto"; }
+.raleway { font-family: "raleway"; }
+// .journal { font-family: "journal"; }
+// .typewriter { font-family: typewriter; }
